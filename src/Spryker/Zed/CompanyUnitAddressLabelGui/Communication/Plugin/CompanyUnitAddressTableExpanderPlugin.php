@@ -97,11 +97,6 @@ class CompanyUnitAddressTableExpanderPlugin extends AbstractPlugin implements
         );
     }
 
-    /**
-     * @param string $name
-     *
-     * @return string
-     */
     protected function beautifyLabel(string $name): string
     {
         return "<span class='company-unit-address-label'>$name</span>";

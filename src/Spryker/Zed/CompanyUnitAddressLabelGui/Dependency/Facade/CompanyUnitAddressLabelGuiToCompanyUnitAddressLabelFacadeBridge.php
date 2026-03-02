@@ -24,11 +24,6 @@ class CompanyUnitAddressLabelGuiToCompanyUnitAddressLabelFacadeBridge implements
         $this->companyUnitAddressLabelFacade = $companyUnitAddressLabelFacade;
     }
 
-    /**
-     * @param int $idCompanyUnitAddress
-     *
-     * @return \Generated\Shared\Transfer\CompanyUnitAddressLabelCollectionTransfer
-     */
     public function getCompanyUnitAddressLabelsByAddress(int $idCompanyUnitAddress): CompanyUnitAddressLabelCollectionTransfer
     {
         return $this->companyUnitAddressLabelFacade->getCompanyUnitAddressLabelsByAddress($idCompanyUnitAddress);

@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\CompanyUnitAddressLabelCollectionTransfer;
 
 interface CompanyUnitAddressLabelGuiToCompanyUnitAddressLabelFacadeInterface
 {
-    /**
-     * @param int $idCompanyUnitAddress
-     *
-     * @return \Generated\Shared\Transfer\CompanyUnitAddressLabelCollectionTransfer
-     */
     public function getCompanyUnitAddressLabelsByAddress(int $idCompanyUnitAddress): CompanyUnitAddressLabelCollectionTransfer;
 }
