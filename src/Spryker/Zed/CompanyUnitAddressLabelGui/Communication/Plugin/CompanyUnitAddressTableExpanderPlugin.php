@@ -99,6 +99,6 @@ class CompanyUnitAddressTableExpanderPlugin extends AbstractPlugin implements
 
     protected function beautifyLabel(string $name): string
     {
-        return "<span class='company-unit-address-label'>$name</span>";
+        return sprintf("<span class='company-unit-address-label'>%s</span>", htmlspecialchars($name, ENT_QUOTES, 'UTF-8'));
     }
 }
